@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files to Google Drive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.ibb.co/FJ9tzFz/logohsas-whitebg.jpg" alt="logohsas-whitebg" width="150" height="150">
+        <h1>Upload Files to Google Drive</h1>
+        <p>Select the standard and upload your files:</p>
+	<p>Please name your file properly</p>
+	<p>EXAMPLE: (6.1.1 - FILE NAME_1.JPG)</p> 
+
+        <!-- File upload form -->
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="standard">Choose Standard:</label>
+            <select id="standard" name="standard" required>
+                <option value="1">Standard 1</option>
+                <option value="2">Standard 2</option>
+                <option value="3">Standard 3</option>
+                <option value="4">Standard 4</option>
+                <option value="5">Standard 5</option>
+                <option value="6">Standard 6</option>
+                <option value="7">Standard 7</option>
+                <option value="8">Standard 8</option>
+                <option value="9">Standard 9</option>
+                <option value="10">Standard 10</option>
+            </select>
+
+            <label for="files">Upload Files (Max 3 files):</label>
+            <input type="file" id="files" name="files" multiple required>
+
+            <button type="submit">Upload</button>
+        </form>
+
+        <!-- Confirmation Modal -->
+        <div id="confirmationModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Upload Successful!</h2>
+                <p>Your files have been uploaded successfully to Google Drive.</p>
+                <button id="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
