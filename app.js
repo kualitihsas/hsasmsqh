@@ -3,7 +3,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
 
     const formData = new FormData(this); // Get form data including files
 
-    fetch('https://hsasmsqh.vercel.app/upload', {
+    fetch('upload', {
         method: 'POST',
         body: formData, // Send the form data to the server
     })
