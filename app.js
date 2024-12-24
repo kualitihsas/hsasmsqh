@@ -3,7 +3,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
 
     const formData = new FormData(this); // Get form data including files
 
-    fetch('upload', {
+    fetch('https://hsasmsqh-backend.onrender.com/upload', {
         method: 'POST',
         body: formData, // Send the form data to the server
     })
